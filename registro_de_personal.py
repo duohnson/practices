@@ -119,7 +119,7 @@ while True:
             if usuario_encontrado:
                 usuario_encontrado.ver_datos() # Si encontro la cedula o bien al usuario, 
             else:
-                print("Usuario no encontrado.") # Si no encontro el registro
+                print("Usuario no encontrado.\n") # Si no encontro el registro
         elif seleccion == 3:
             print("Saliendo...\n") 
             break # Para salir de sistema
@@ -128,4 +128,5 @@ while True:
 
     except ValueError:
         print("Usaste un valor incorrecto, debes escoger entre (1) ó (2).")
+
 
