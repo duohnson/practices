@@ -1,5 +1,11 @@
 # Pequeña practica realizada, donde vemos un poquito como funciona guardar y cargar listas en JSON
 
+# This project implements a Personal Records System using Object-Oriented Programming (OOP) and persistent storage. 
+# It features a User class that manages individual profiles and handles the conversion between Python Objects and JSON format. 
+# By using a dictionary-based storage logic, the system can save data to a local file and "re-hydrate" it back into class instances for later use. 
+# The application includes a validated main loop that allows users to register new entries or retrieve existing ones by ID, ensuring data persistence and basic error handling.
+# I built this app in Spanish since it's my native tongue and I'm using it for practice
+
 import json # Para este caso al ser una practica, solo usaremos json.
 import uuid # En caso de sustituir cédulas por ids que se generen aleatoriamente.
 
@@ -128,5 +134,6 @@ while True:
 
     except ValueError:
         print("Usaste un valor incorrecto, debes escoger entre (1) ó (2).")
+
 
 
