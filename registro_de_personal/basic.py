@@ -134,6 +134,3 @@ while True:
 
     except ValueError:
         print("Usaste un valor incorrecto, debes escoger entre (1) ó (2).")
-
-
-
