@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block catalogo %}
+<div style="max-width: 400px; margin: 50px auto; padding: 20px; background: rgba(255, 255, 255, 0.9); border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center; color: #df33c8e0;">Iniciar Sesión</h2>
+    {% if messages %}
+        {% for message in messages %}
+            <div style="color: {% if message.tags == 'error' %}red{% else %}green{% endif %}; text-align: center; margin-bottom: 10px;">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <div style="margin-bottom: 15px;">
+            <label for="{{ form.username.id_for_label }}" style="display: block; margin-bottom: 5px; color: #666;">Usuario</label>
+            {{ form.username }}
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label for="{{ form.password.id_for_label }}" style="display: block; margin-bottom: 5px; color: #666;">Contraseña</label>
+            {{ form.password }}
+        </div>
+        <button type="submit" style="width: 100%; padding: 10px; background: rgba(236, 21, 49, 0.479); color: white; border: none; border-radius: 10px; cursor: pointer; transition: all 0.3s ease;">Iniciar Sesión</button>
+    </form>
+    <p style="text-align: center; margin-top: 20px;">
+        ¿No tienes cuenta? <a href="{% url 'registro' %}" style="color: #df33c8e0;">Regístrate</a>
+    </p>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block catalogo %}
+<div class="cart-container">
+    <h1>Carrito de Compras</h1>
+    {% if items %}
+    <div class="cart-items">
+        {% for item in items %}
+        <div class="cart-item">
+            <div class="cart-item-img">
+                {% if item.producto.primera_imagen %}
+                <img src="{{ item.producto.primera_imagen.imagen.url }}" alt="{{ item.producto.nombre }}">
+                {% else %}
+                <img src="{% static 'img/fresa.png' %}" alt="Sin imagen">
+                {% endif %}
+            </div>
+            <div class="cart-item-details">
+                <h3>{{ item.producto.nombre }}</h3>
+                <p>{{ item.producto.descripcion }}</p>
+                <p>Cantidad: {{ item.quantity }}</p>
+                <p>Precio unitario: ₡{{ item.producto.precio }}</p>
+                <p>Subtotal: ₡{{ item.subtotal }}</p>
+            </div>
+            <div class="cart-item-actions">
+                <a href="{% url 'remove_from_cart' item.id %}" class="btn">Remover</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="cart-total">
+        <h2>Total: ₡{{ total }}</h2>
+        <a href="{{ whatsapp_url }}" target="_blank" class="btn">Enviar por WhatsApp</a>
+    </div>
+    {% else %}
+    <p>Tu carrito está vacío.</p>
+    <a href="{% url 'catalogo' %}" class="btn">Ir al Catálogo</a>
+    {% endif %}
+</div>
+{% endblock %}
