@@ -1,5 +1,4 @@
-Hola Gituser!
+By Daniel Uohnson - Type: My Learning Lab
 
-By Daniel Uohnson - De tipo: Practicas
-
-Readme: Este es un simple repositorio, aburrido pero con información, en este repositorio basicamente yo practico todo lo que estudio y dejo todos mis apuntes, si lees algo incorrecto me ayudaría mucho que me corrigieras, gracias!!
+Readme: This is just a simple, straightforward repository where I keep all my study notes and practice everything I learn. It might not be the flashiest repo, but it's where my progress lives.
+If you spot anything incorrect or have any suggestions, I’d truly appreciate your feedback—it would help me a lot in my learning journey! Thanks!!
