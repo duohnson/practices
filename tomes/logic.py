@@ -1,5 +1,6 @@
 # Tomes
 from datetime import datetime, date
+import json as js
 
 class Registro():
 
