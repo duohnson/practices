@@ -1,3 +1,4 @@
+'''
 prueba = int(input("escriban\n"))
 
 match prueba:
@@ -9,3 +10,4 @@ match prueba:
         print("3")
     case _:
         print("valor erroneo, solo de 1 a 3")
+'''
