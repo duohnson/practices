@@ -50,3 +50,4 @@ def inicio():
             print("Valor utilizado incorrecto, se reiniciará la calculadora, seleccione un valor entre 1 o 5.")
 
 inicio()
+
