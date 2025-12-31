@@ -11,5 +11,9 @@ match prueba:
     case _:
         print("valor erroneo, solo de 1 a 3")
 '''
-time = 12
-print("Party Time" if time == 12 else "Wait")
+registro = {
+    1: {"campo": "nombre", "valor": "kenneth"},
+    2: {"campo": "apellido", "valor": "uohnson"}
+}
+
+print(registro[1]["valor"])
