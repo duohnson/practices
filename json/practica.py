@@ -19,4 +19,21 @@ import json
 ########################################################
 
 ########################################################
-#######################  ###############################
+#################### CON CLASE #########################
+registros = {}
+
+class Personal():
+    def __init__(self, cedula, nombre, apellidos, edad):
+        self.cedula=cedula
+        self.nombre=nombre
+        self.apellidos=apellidos
+        self.edad=edad
+
+    def guardar():
+        ced = "70xxx0xxx"
+        nom = "Daniel"
+        apell = "Uohnson"
+        ed = 27
+
+        registrado = Personal(ced,nom,apell,ed)
+        registros[registrado.ced] = registrado.__dict__
