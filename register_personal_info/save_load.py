@@ -4,7 +4,7 @@ import os
 # Modulo 2 = # Globales para RAM #
 
 registros = {}
-BASE_DATOS = "personal/registros.json"
+BASE_DATOS = "register_personal_info/registros.json"
 
 def guardar(): # guardar el registro de ram a json
     try:

@@ -1,0 +1,7 @@
+Orden: 4966
+Nombre: Daniel Uohnson
+Cédula: 70xxx0xxx
+Modelo: DELL 7760 LATITUDE
+Serie: DATO_SENSIBLE
+Fecha: 18/02/2026
+--------------------
