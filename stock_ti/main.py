@@ -36,6 +36,9 @@ def modificar_orden():
 
 def inicio():
     while True:
+        print("================================================================")
+        print("\n--- Sistema de Gestión de Equipos DUOHNSON ---")
+        print("\n==============================================================")
         print("Seleccione una opción:")
         print("1. Registrar nueva orden")
         print("2. Consultar orden existente")
@@ -67,7 +70,7 @@ def inicio():
                 print(f"Serie: {info['serie']}")
                 print(f"Fecha: {info['fecha']}")
         elif opcion == "6":
-            print("Gracias por usar el sistema de gestión de órdenes.")
+            print("Gracias por usar el sistema de gestión de equipos.")
             break
         else:
             print("Opción no válida, por favor intente nuevamente.")
