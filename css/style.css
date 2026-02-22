@@ -1,0 +1,44 @@
+#fondo {
+    background-color: silver;
+}
+
+/* hola, que onda? */
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.txt_tittle {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    border-style: solid;
+    border-color: #817d7dcc;
+    border-radius: 5px;
+    border-width: 5px;
+    background-color: #ffffffdc;
+}
+
+.txt_tittle:hover {
+    color: #ffffffdc;
+    background-color: #000000;
+}
+
+.txt_text, li {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+#fondo {
+    background-color: silver;
+}
+
+
+.txt_texts {
+    color: aqua;
+    font-size: 25px;
+}
+
+.txt_textsss {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+}

@@ -2,25 +2,28 @@
 
 <head>
     <title>duohnson practica</title>
-    <meta charset="UFT-8">
-    <link href="/css/style.css">
+    <meta charset="UTF-8">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
+    <article id="fondo">
+    Mi primer sitio web, espero que les guste! (hermoso no? siempre que tu crees algo, será hermoso, y nadie nunca podrá quitarle valor a lo que nace de tu esfuerzo!!)
+    </article>
 
-    <h1>Hola Mundo!</h1>
-    <a target="_blank" href="https://github.com/duohnson/">
+    <h1 class="txt_tittle">Hola Mundo!</h1>
+    <a  target="_blank" href="https://github.com/duohnson/">
         GitHub
     </a>
-    <h5>
+    <h5 class="txt_text">
         Puedes encontrar mi GitHub clickeando arriba!
     </h5>
     <img src="./img/tests.png" width="100">
 
     <form action="/formulario" method="POST">
-        <label for="usuario">Usuario:</label>
+        <label class="txt_text" for="usuario">Usuario:</label>
         <input id="usuario" name="usuario" placeholder="Cual es tu usuario?">
         <br>
-        <label for="password">Contrasena</label>
+        <label class="txt_text" for="password">Contrasena</label>
         <input type="password" id="password" name="password">
         <br>
         <button type="button">LogIn</button>
@@ -33,17 +36,15 @@
     </ul>
     <ol>
         <form>
-            <label for="Windows">Windows</label>
+            <label class="txt_texts" for="Windows">Windows</label>
             <input type="checkbox" name="Windows" id="Windows">
             <br>
-            <label for="MacOs">MacOs</label>
+            <label class="txt_textsss" for="MacOs">MacOs</label>
             <input type="checkbox" name="MacOs" id="MacOs">
             <br>
-            <label for="Linux">Linux</label>
+            <label class="txt_text" for="Linux">Linux</label>
             <input type="checkbox" name="Linux" id="Linux">
         </form>
     </ol>
-
-
 </body>
 </html>
