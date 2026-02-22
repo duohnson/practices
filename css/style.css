@@ -6,6 +6,8 @@
 
 body {
     background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 
 .txt_tittle {
@@ -16,6 +18,11 @@ body {
     border-radius: 5px;
     border-width: 5px;
     background-color: #ffffffdc;
+    padding: 5px 5px 5px 20px;
+    margin: 10px 10px 10px 10px;
+    height: auto;
+    display: inline-block;
+    text-shadow: 2px 2px 5px #000000b0;
 }
 
 .txt_tittle:hover {
@@ -26,19 +33,29 @@ body {
 .txt_text, li {
     color: rgb(255, 255, 255);
     font-size: 25px;
+    margin: 15px 15px 15px 15px;
 }
 
 #fondo {
     background-color: silver;
 }
 
-
-.txt_texts {
-    color: aqua;
-    font-size: 25px;
+.btn {
+    background-color: #ffffffdc;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-style: solid;
+    border-color: #817d7dcc;
+    border-radius: 5px;
+    border-width: 5px;
+    padding: 2.5px 2.5px 2.5px 2.5px;
+    margin: 10px 10px 10px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #000000b0;
 }
 
-.txt_textsss {
-    color: rgb(255, 0, 0);
-    font-size: 25px;
+.btn:hover {
+    background-color: #000000;
+    color: #ffffffdc;
 }
