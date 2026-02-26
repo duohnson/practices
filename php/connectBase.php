@@ -25,7 +25,5 @@ function connectToDatabase() {
 
 $conn = connectToDatabase();
 
-echo "Conexión exitosa a la base de datos, todo OK.";
-
 ?>
 

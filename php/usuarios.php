@@ -18,7 +18,7 @@ class Usuario {
         $this->email = $email;
     }
     
-    public function registrar(&$usuarios) { // donde llamamos la base de usuarios
+    public function registrar() { // donde llamamos la base de usuarios
         $sql = "INSERT INTO usuarios (usuario, contrasena, email) VALUES (?, ?, ?)"; // query para insertar un nuevo usuario en la base de datos
         $stmt = $this->conn->prepare($sql); // preparamos la consulta
         
@@ -29,13 +29,20 @@ class Usuario {
         
     }
     
-    public static function iniciarSesion($usuario, $contrasena, $usuarios) { // metodo estatico, no necesita una instancia de la clase para ser llamado
-        foreach ($usuarios as $u) { // foreach para recorrer la base de usuarios, donde $u es cada usuario en la base
-            if ($u->usuario === $usuario && $u->contrasena === $contrasena) {
-                return true; // si el usuario y la contraseña coinciden, retorna true
-            }
+    public function iniciarSesion($usuario, $contrasena) { // metodo estatico, no necesita una instancia de la clase para ser llamado
+        $sql = "SELECT * FROM usuarios WHERE usuario = ? AND contrasena = ?"; // query para seleccionar el usuario que coincide con el nombre de usuario y la contraseña
+        $stmt = $this->conn->prepare($sql); // preparamos la consulta
+        $stmt->bindParam(1, $usuario); // vinculamos los parametros de la consulta con los parametros del metodo
+        $stmt->bindParam(2, $contrasena);
+        $stmt->execute(); // ejecutamos la consulta
+
+        $usuarioEncontrado = $stmt->fetch(PDO::FETCH_ASSOC); // fetch es para obtener el resultado de la consulta, en este caso un array asociativo
+
+        if ($usuarioEncontrado) { // si se encuentra un usuario que coincide con el nombre de usuario y la contraseña, entonces se inicia sesion
+            return true; // se devuelve true para indicar que el inicio de sesion fue exitoso
+        } else {
+            return false; // se devuelve false para indicar que el inicio de sesion fue fallido
         }
-        return false; // si no se encuentra el usuario o la contraseña es incorrecta, retorna false
     }
 }
 ?>

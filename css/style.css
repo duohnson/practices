@@ -1,5 +1,8 @@
 /* hola, que onda? */
 
+
+/*------ todo el body ------*/
+/*------------*/
 body {
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -19,6 +22,7 @@ body {
     animation: spaceMove 25s linear infinite;
 }
 
+/*------ todos los titulos ------*/
 .txt_tittle {
     color: #ffffffdc;
     text-shadow: 2px 2px 5px #ffffffb0;
@@ -35,16 +39,20 @@ body {
     animation: pulse 1ms infinite;
 }
 
+/*------ texto comun ------*/
 .txt_text, li {
     color: rgb(255, 255, 255);
     font-size: 25px;
     margin: 15px 15px 15px 15px;
 }
 
+
+/*------ la verdad esto no se para que es ------*/
 #fondo {
     background-color: rgba(192, 192, 192, 0.267);
 }
 
+/*------ botones ------*/
 .btn {
     background: 
     radial-gradient(circle at 20% 30%, #030102, transparent 40%),
@@ -84,6 +92,8 @@ body {
     text-shadow: 2px 2px 5px #ffffffb0;
 }
 
+
+/*------ tablas #1------*/
 .table {
     border: solid 1px #ffffffdc;
 }
@@ -154,6 +164,13 @@ td:hover {
     box-shadow: 0 0 20px #ff00f7e7;
     animation: jello 1s infinite;
 }
+
+
+
+/* ===================================
+    ANIMACIONES
+=================================== */
+
 
 @keyframes pulse {
     0% {
