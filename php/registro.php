@@ -15,6 +15,8 @@ if($_POST) { // si se ha enviado el formulario, entonces ejecuta el codigo
 
     if ($u->registrar()) { // si el registro es exitoso, entonces muestra un mensaje de exito
         echo "Usuario registrado exitosamente.";
+        header("Location: /practices/html/index.html"); // redirige a la pagina de inicio de sesion
+        exit(); // termina la ejecucion del script
     } else {
         echo "Error al registrar el usuario.";
     }
