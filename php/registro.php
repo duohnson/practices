@@ -24,25 +24,43 @@ if($_POST) { // si se ha enviado el formulario, entonces ejecuta el codigo
 
 ?>
 <!DOCTYPE html>
+
 <head>
-    <title>Registro de Usuario</title>
+    <title>duohnson practica</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <h2 class="txt_tittle">Registrar Usuario</h2>
+    <article id="fondo">
+    Mi primer sitio web, espero que les guste! (hermoso no? siempre que tu crees algo, será hermoso, y nadie nunca podrá quitarle valor a lo que nace de tu esfuerzo!!)
+    </article>
+    <h1 class="txt_tittle">Hola Mundo!</h1>
+    <br>
+    <a class="btn" href="/practices/html/index.html">
+        Inicio
+    </a>
+    <a class="btn" target="_blank" href="https://github.com/duohnson/">
+        GitHub
+    </a>
+    <a class="btn" href="/practices/html/tabla.html">
+        Mi Hardware
+    </a>
+    <h5 class="txt_text">
+        Puedes encontrar mi GitHub clickeando arriba!
+    </h5>
+    <img class="img" src="/practices/html/img/tests.png" width="100">
+    <br>
+    <div class="card" style="width: 350px; height: 300px;">
+        <h2 class="txt_text">Registrar Usuario</h2>
         <form action="registro.php" method="POST">
-            <label class="txt_text" for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario"><br>
-            <label class="txt_text" for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena"><br>
-            <label class="txt_text" for="email">Email:</label>
-            <input type="text" id="email" name="email"><br>
-            <input type="submit" value="Registrar">
+            <input style="margin-bottom: 10px;" type="text" id="usuario" name="usuario" placeholder="¿Usuario?"><br>
+            <input style="margin-bottom: 10px" type="password" id="contrasena" name="contrasena" placeholder="¿Contraseña?"><br>
+            <input type="text" id="email" name="email" placeholder="¿Email?"><br>
+            <input class="btn" type="submit" value="Registrar">
         </form>
     </div>
 </body>

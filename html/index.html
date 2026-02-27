@@ -3,6 +3,7 @@
 <head>
     <title>duohnson practica</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +28,12 @@
         Puedes encontrar mi GitHub clickeando arriba!
     </h5>
     <img class="img" src="./img/tests.png" width="100">
-
+    <br>
+<div class="card">
+                <h2 class="txt_text">Iniciar Sesión</h2>
     <form action="/practices/php/ingresar.php" method="POST">
-        <label class="txt_text" for="usuario">Usuario:</label>
-        <input id="usuario" name="usuario" placeholder="¿Cual es tu usuario?">
+        <input style="margin-bottom: 10px;" id="usuario" name="usuario" placeholder="¿Cual es tu usuario?">
         <br>
-        <label class="txt_text" for="password">Contraseña:</label>
         <input type="password" id="password" name="contrasena" placeholder="¿Cual es tu contraseña?">
         <br>
         <button class="btn" type="submit">Ingresar</button>
@@ -40,6 +41,7 @@
             Registrarse
         </a>
     </form>
+</div>
     <div style="color: white; padding: 2px; font-size: 15px;">
         <div>
             <h3>Bienvenido al BLOG de duohnson</h3>

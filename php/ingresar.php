@@ -2,6 +2,9 @@
 require_once("connectBase.php");
 require_once("usuarios.php");
 
+session_start(); // iniciamos la sesion para poder usar las variables de sesion
+session_regenerate_id(true); // regeneramos el id de sesion para evitar ataques de session fixation
+
 if($_POST) {
 
     $u = new Usuario($conn); // solo ocupamos pasar la conexion,

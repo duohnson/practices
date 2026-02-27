@@ -50,6 +50,7 @@ body {
 /*------ la verdad esto no se para que es ------*/
 #fondo {
     background-color: rgba(192, 192, 192, 0.267);
+    color: #ededed;
 }
 
 /*------ botones ------*/
@@ -165,7 +166,87 @@ td:hover {
     animation: jello 1s infinite;
 }
 
+/* carta de login y register */ 
 
+.card {
+  font-family: Montserrat, sans-serif;
+  width: 300px;
+  height: 250px;
+  translate: -6px -6px;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(34, 33, 33, 0.8) 1px, transparent 2px),
+        radial-gradient(circle at 70% 60%, rgba(80, 69, 69, 0.6) 1px, transparent 2px),
+        radial-gradient(circle at 40% 80%, rgba(19, 2, 2, 0.7) 1px, transparent 2px),
+        linear-gradient(270deg, #0f0107, #1b0033, #141618, #1b0033);
+
+  background-size: 
+        200px 200px,
+        250px 250px,
+        300px 300px,
+        400% 400%;
+
+  animation: spaceMove 25s linear infinite;
+  border: 3px solid #0000004a;
+  box-shadow: 12px 12px 0 #00000045;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:hover {
+  box-shadow: 6px 6px 0 #cd0998;
+}
+
+.docs {
+    margin: 0;
+    display: flex;
+}
+
+nav {
+  width: 250px;
+  background: #111;
+  height: auto;
+  padding: 20px;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  display: none;
+}
+
+section:target {
+  display: block;
+}
+
+body:not(:has(section:target)) #inicio {
+  display: block;
+}
+
+.info-container {
+    border-radius: 2px;
+    border: solid 1px #ffffffdc;
+}
+
+.info {
+    border-radius: 2px;
+    border: solid 1px #cc19e0;
+    box-shadow: #cc19e0 0px 0px 10px;
+    background-color: #091be337;
+    animation: pulse 1s infinite;
+}
 
 /* ===================================
     ANIMACIONES

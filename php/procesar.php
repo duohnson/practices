@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") { // si el metodo de envio es POST, en
 <head>
     <title>Registros Uohnson</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <!-- aqui vamos a importar la base del registro -->
